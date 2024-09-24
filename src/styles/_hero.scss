@@ -1,0 +1,69 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(../images/Interestelar/Background_Interstellar.jfif);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size: 50%;
+
+    @media (max-width: 768px) {
+        background-image: url(../images/Interestelar/Background_Interstellar.jfif);
+        padding-top: calc(50vw + 24px);
+        background-size: contain;
+        background-position: 0px 0px;
+        margin-top: -80px;
+    }
+
+    .button {
+        margin-top: 2vw;
+        margin-bottom: 8px;
+        border-style: none;
+    }
+
+    &__content {
+        max-width: 640px;
+
+        &__branding {
+            max-width: 320px;
+            margin: 0 auto 38px;
+
+            @media (max-width: 768px) {
+                max-width: 180px;
+            }
+        }
+
+        .title {
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-top: 40px;
+            }
+        }
+
+        &__combos {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            @media (max-width: 768px) {
+                display: block;
+            }
+
+            &__combo {
+                width: calc(50% - 12px);
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}

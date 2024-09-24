@@ -3,10 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interestelar</title>
+    <title>Loca Ebac</title>
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-    <h1>Ola mundo</h1>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="title--big header__logo">
+                    Loca Ebac
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Watch Now</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Login</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <h3 class="title">
+                Where to watch, Interstellar?
+            </h3>
+            <p>
+                <a href="#" class="link-text">Watch on Disney+</a>
+                <br>
+                <span class="text">
+                    R$ 27.90/mounth or R$ 279,90/year*
+                </span>
+            </p>
+            <ul class="hero__content__combos">
+                <li class="hero__content__combos__combo">
+                    <button class="button">Watch Now</button>
+                    <span class="text">R$ 45,90/mês*</span>
+                </li>
+                <li class="hero__content__combos__combo">
+                    <button class="button">Watch Now</button>
+                    <span class="text">R$ 279,90/year*</span>
+                </li>
+            </ul>
+            <h3 class="title">About the movie</h3>
+            <p class="text">
+                Num cenário de catástrofe, o planeta Terra começa a sofrer com crises ambientais sérias. A solução encontrada pela NASA é descobrir outro planeta onde os humanos possam habitar. A missão de Cooper, ao lado de outros astronautas, é descobrir qual planeta será a nossa futura casa e salvar a humanidade.
+            </p>
+        </div>
+    </section>
+    <section class="shows">
+        <h3 class="title--small">Best Scene</h3>
+        <nav class="shows__tabs">
+            <button data-tab-button="beginning" class="shows__tabs__button shows__tabs__button--is--active">
+                Beginning
+            </button>
+            <button data-tab-button="middle" class="shows__tabs__button">
+                Middle
+            </button>
+            <button data-tab-button="end" class="shows__tabs__button">
+                End
+            </button>
+        </nav>
+        <ul data-tab-id="beginning" class="shows__list shows__list--is--active">
+            <li class="shows__list__item">
+                <img src="./dist/images/Interestelar/Cena1.webp" alt="Farm scene">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Interestelar/Cena2.jpg" alt="Sand storm scene">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Interestelar/Cena3.jpg" alt="Nasa scene">
+            </li>
+        </ul>
+        <ul data-tab-id="middle" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/Interestelar/Cena4.webp" alt="Tripulation scene">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Interestelar/Cena5.webp" alt="Black Hole system scene">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/Interestelar/Cena6.png" alt="Miller planet scene">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/Interestelar/Cena7.jpg" alt="Miller planet wave scene">
+            </li>
+        </ul>
+        <ul data-tab-id="end" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/Interestelar/Cena8.jpg" alt="Mann planet scene">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/Interestelar/Cena9.jpg" alt="Tresseract scene">
+            </li>
+            <li class="shows__list__item">
+                <img src="dist/images/Interestelar/Cena10.jpg" alt="Edmunds planet scene">
+            </li>
+        </ul>
+    </section>
+    <section class="image-text-section image-text-section--image-full-width">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png">
+            <img src="./dist/images/Interestelar/Black_Hole.jpg" alt="Buraco Negro">
+        </picture>
+        <div class="image-text-section__text__container image-text-section--image-full-width__text__container">
+            <h2 class="title">
+                Download the movie
+            </h2>
+            <p class="text--big">
+                Download and watch whenever and wherever you want, accessing Disney+. This way, your favorites are always with you, even without internet.
+            </p>
+        </div>
+    </section>
+    <section class="available-devices">
+        <h2 class="title">Available on your favorite devices</h2>
+        <ul class="available-devices__list">
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/computador.png" alt="Computador">
+                <h4 class="title--small">Computer</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOS</li>
+                    <li>PC Windows</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/tv.png" alt="TV">
+                <h4 class="title--small">TV</h4>
+                <ul class="text">
+                    <li>Amazon Fire TV</li>
+                    <li>Android TV</li>
+                    <li>Apple TV</li>
+                    <li>Chromecast</li>
+                    <li>TVs LG</li>
+                    <li>Roku</li>
+                    <li>Samsung</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/videogames.png" alt="Videogames">
+                <h4 class="title--small">Video games</h4>
+                <ul class="text">
+                    <li>PS4</li>
+                    <li>PS5</li>
+                    <li>Xbox One</li>
+                    <li>Xbox Series X</li>
+                    <li>Xbox Series S</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/celular.png" alt="Celular">
+                <h4 class="title--small">Smartphone e tablets</h4>
+                <ul class="text">
+                    <li>Tablets Amazon Fire</li>
+                    <li>Smartphone e Tablets Android</li>
+                    <li>iPhone e iPad</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="title">FAQ</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Ask about...?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    The answer
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Ask about...?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    The answer
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Ask about...?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    The answer
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="Globo do mundo">
+                        <select>
+                            <option selected>English</option>
+                            <option>Portuguese</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Terms and Conditions of Use</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Privacy Policy</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Data protection</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Subscription contract</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Personalized Ads</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Compatible devices</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Help</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                © 2024 Loca Ebac, company intended to inform. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>
